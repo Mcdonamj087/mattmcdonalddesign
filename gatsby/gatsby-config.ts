@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: process.env.SANITY_PROJECT_ID,
+        projectId: 'vlmy7p93',
         dataset: `production`,
       },
     },
