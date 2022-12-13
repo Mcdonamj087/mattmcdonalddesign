@@ -1,0 +1,81 @@
+body {
+  font-family: var(--font--body);
+  font-weight: var(--font__weight--heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color: var(--color);
+  background: var(--background);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+}
+
+::selection {
+  background-color: tint($cta, 60%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font--heading);
+  letter-spacing: -0.03em;
+  font-weight: var(--font__weight--heading);
+}
+
+p {
+  font-family: var(--font--body);
+  font-weight: var(--font__weight--body);
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--color--black);
+}
+
+a.slide {
+  position: relative;
+}
+
+a.slide:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  color: var(--color--cta);
+  z-index: 10;
+  width: 0;
+  white-space: nowrap;
+  text-decoration: underline;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+
+a.slide:hover:after {
+  width: 100%;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--background);
+}
+
+.deferAppearance {
+  opacity: 0;
+  transition: 0.5s ease-out;
+  transition-property: opacity;
+}
+
+.deferAppearance.loaded {
+  opacity: 1;
+}

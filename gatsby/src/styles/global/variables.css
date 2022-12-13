@@ -1,0 +1,19 @@
+:root {
+  --font--heading: 'Gilroy', helvetica, sans-serif;
+  --font--body: 'IBM Plex Sans', helvetica, sans-serif;
+
+  --font__weight--heading: 800;
+  --font__weight--body: 300;
+
+  --color--black: #000;
+  --color--white: #f0f0ed;
+  --color--cta: #02dbc4;
+  --dark-mode-color: #000;
+  --fun-mode-color: linear-gradient(45deg, #003eff, #f200ff, #fffa00);
+
+  --background: var(--color--white);
+  --color: var(--color--black);
+
+  --slide-transition: 0.5s cubic-bezier(0.36, 0.06, 0.2, 0.95);
+  --theme-mode-transition: 0.5s cubic-bezier(0.36, 0.06, 0.2, 0.95);
+}

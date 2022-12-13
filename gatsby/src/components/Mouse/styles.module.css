@@ -1,0 +1,63 @@
+.mouseDot {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: -50px;
+  z-index: 1000000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  > span {
+    border-radius: 50%;
+    transition: 0.5s cubic-bezier(0.3, 0.15, 0.1, 1);
+    position: absolute;
+  }
+
+  .dot {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+  }
+
+  .ring {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    transform: scale(0.2);
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      opacity: 0;
+      transition: 0.5s cubic-bezier(0.3, 0.15, 0.1, 1);
+    }
+  }
+
+  &.active {
+    .dot {
+      transform: scale(5);
+      background: transparent;
+    }
+
+    .ring {
+      transform: scale(1);
+    }
+
+    &.view-project {
+      svg {
+        opacity: 1;
+        transform: rotate(1turn);
+      }
+    }
+  }
+}

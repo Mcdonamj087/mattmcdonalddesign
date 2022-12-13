@@ -1,0 +1,31 @@
+{
+  "name": "mmdportfolio2022",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Matthew Mcdonald <mcdonamj087@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.35.2",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.35.0",
+    "@sanity/default-layout": "^2.35.2",
+    "@sanity/default-login": "^2.35.2",
+    "@sanity/desk-tool": "^2.35.2",
+    "@sanity/google-maps-input": "^2.36.0",
+    "@sanity/vision": "^2.35.2",
+    "prop-types": "^15.6",
+    "react": "^16.2",
+    "react-dom": "^16.2",
+    "react-icons": "^3.11.0",
+    "styled-components": "^5.3.6"
+  }
+}
